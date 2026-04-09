@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REENVO — Pure Water. A Flawed Vessel.</title>
+  <meta name="description" content="For a century, we solved the fluid. We forgot the cup. REENVO is building the third option — clean, sustainable, designed for the way India actually eats." />
+  <meta property="og:title" content="REENVO — Pure Water. A Flawed Vessel." />
+  <meta property="og:description" content="A glass of water shouldn't have to come with a side of doubt." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Fragment+Mono&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- NAV -->
+  <nav id="navbar" class="navbar">
+    <a href="#" class="nav-logo">REENVO</a>
+    <div class="nav-right">
+      <a href="#problem" class="nav-link">The Problem</a>
+      <a href="#scale" class="nav-link">The Scale</a>
+      <a href="#community" class="nav-link">Community</a>
+      <a href="#notify" class="nav-cta">Get Notified</a>
+    </div>
+    <button class="nav-menu-btn" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#problem" class="mobile-link">The Problem</a>
+    <a href="#scale" class="mobile-link">The Scale</a>
+    <a href="#community" class="mobile-link">Community</a>
+    <a href="#notify" class="mobile-link">Get Notified</a>
+  </div>
+
+  <!-- ================================================
+       HERO
+  ================================================ -->
+  <section id="hero" class="hero">
+
+    <!-- 6-cell mosaic — the problem made visible -->
+    <div class="hero-mosaic" aria-hidden="true">
+      <div class="mosaic-cell cell-1">
+        <img src="images/cs_bhasha_dispenser.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="mc-label">Steel. Shared.</div>
+      </div>
+      <div class="mosaic-cell cell-2">
+        <img src="images/cs_paper_cups_bin.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+        <div class="mc-label">Paper. Landfill.</div>
+      </div>
+      <div class="mosaic-cell cell-3">
+        <img src="images/cs_staff_washing.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+      </div>
+      <div class="mosaic-cell cell-4">
+        <img src="images/cs_dispenser_basin.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+      </div>
+      <div class="mosaic-cell cell-5">
+        <img src="images/cs_fresh_used_glass.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+      </div>
+      <div class="mosaic-cell cell-6">
+        <img src="images/cs_bluestar_cooler.jpg" alt="" loading="eager" onerror="this.parentElement.classList.add('no-img')" />
+      </div>
+    </div>
+
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge mono" data-reveal>A REENVO INVESTIGATION</div>
+
+      <h1 class="hero-headline" data-reveal data-delay="100">
+        Pure water.
+        <em class="hero-hl-em">A flawed vessel.</em>
+      </h1>
+
+      <p class="hero-sub" data-reveal data-delay="240">
+        For a century, we solved the fluid.<br/>We forgot the cup.
+      </p>
+
+      <div class="hero-scroll" data-reveal data-delay="440">
+        <span class="mono">Scroll to understand the crisis</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       HOOK
+  ================================================ -->
+  <section class="hook-section" id="hook">
+    <div class="container">
+      <div class="hook-text" data-reveal>
+        <p class="hook-big">We keep pushing water away.</p>
+        <p class="hook-big hook-dim">And we are right to.</p>
+      </div>
+      <div class="hook-body" data-reveal>
+        <p>Every day, millions of people skip drinking water at restaurants just because the steel glass in front of them does not feel safe. And instead of questioning the system, we choose to just let it be. Go home and drink. Get our own water bottle. Or reach for the paper cup.</p>
+      </div>
+      <div class="hook-quote" data-reveal>
+        <blockquote>
+          <p>"I have almost always skipped drinking water from those glasses. And I'm sure I'm not the only one."</p>
+          <cite>A voice from our community. And millions more just like it.</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       THE PROBLEM
+  ================================================ -->
+  <section class="problem-section" id="problem">
+    <div class="problem-header container" data-reveal>
+      <div class="eyebrow">THE PROBLEM</div>
+      <h2>A glass of water shouldn't have to come<br/><em>with a side of doubt.</em></h2>
+      <p class="problem-intro">Walk into any quick service restaurant in India. Order your meal. And then, there it is. A steel glass with a suspicious film, or a flimsy plastic cup headed straight for a landfill. Neither option feels good. Neither one is good enough.</p>
+    </div>
+
+    <div class="options-split">
+      <div class="option option-steel" data-reveal>
+        <div class="option-img-wrap">
+          <img src="images/cs_bhasha_dispenser.jpg" alt="Reusable steel cups at a water dispenser" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="option-img-tint"></div>
+          <div class="option-float-tag mono">Touched by hundreds today</div>
+        </div>
+        <div class="option-body">
+          <div class="option-tag mono">01 — THE REUSED STEEL GLASS</div>
+          <h3>Shared, washed in bulk, and passed on to the next customer.</h3>
+          <p>No visibility into how it was cleaned. Or if it was. You can see the stains. You can smell the doubt.</p>
+          <div class="option-verdict steel-v">
+            <span class="v-word green-text">Sustainable</span>
+            <span class="v-sep">/</span>
+            <span class="v-word red-text">Doubtful</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="options-or" aria-hidden="true">
+        <div class="or-line"></div>
+        <div class="or-label">or</div>
+        <div class="or-line"></div>
+      </div>
+
+      <div class="option option-plastic" data-reveal data-delay="130">
+        <div class="option-img-wrap">
+          <img src="images/cs_paper_cups_bin.jpg" alt="Paper cups overflowing a bin" onerror="this.parentElement.classList.add('no-img')" />
+          <div class="option-img-tint"></div>
+          <div class="option-float-tag mono">Used once. 20 years to decompose.</div>
+        </div>
+        <div class="option-body">
+          <div class="option-tag mono">02 — THE SINGLE-USE PLASTIC CUP</div>
+          <h3>Hygienic for one use, harmful for centuries after.</h3>
+          <p>India generates over 3.5 million tonnes of plastic waste annually. Throwaway cups are a quiet, daily contributor.</p>
+          <div class="option-verdict plastic-v">
+            <span class="v-word green-text">Hygienic</span>
+            <span class="v-sep">/</span>
+            <span class="v-word red-text">Unsustainable</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       OPERATIONAL FRICTION
+  ================================================ -->
+  <section class="ops-section" id="ops">
+    <div class="container">
+      <div class="ops-header" data-reveal>
+        <div class="eyebrow">THE BACK-OF-HOUSE REALITY</div>
+        <h2>The operational burden<br/><em>nobody talks about.</em></h2>
+      </div>
+
+      <div class="ops-grid">
+        <div class="ops-card ops-big">
+          <div class="ops-img-wrap">
+            <img src="images/cs_staff_washing.jpg" alt="Staff manually washing cups" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="ops-tint"></div>
+          </div>
+          <div class="ops-text">
+            <div class="ops-big-num">100<em>×</em></div>
+            <div class="ops-label mono">THE LABOR LOOP</div>
+            <p>Manual cup cycles every single day in a high-traffic QSR. Collect. Wash. Dry. Stack. Repeat.</p>
+          </div>
+        </div>
+
+        <div class="ops-card ops-stat">
+          <div class="ops-icon">⚡</div>
+          <div class="ops-stat-num">30–40%</div>
+          <p>of kitchen efficiency drained by cup management alone</p>
+        </div>
+
+        <div class="ops-card ops-img">
+          <div class="ops-img-wrap">
+            <img src="images/cs_dispenser_basin.jpg" alt="Cup washing basin" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="ops-tint"></div>
+          </div>
+          <div class="ops-text">
+            <div class="ops-label mono">WET-NESTING</div>
+            <p>Stacked wet cups trap moisture. Bacteria form in under 6 hours. Invisibly.</p>
+          </div>
+        </div>
+
+        <div class="ops-card ops-stat ops-blue">
+          <div class="ops-icon">🌡️</div>
+          <div class="ops-stat-num">85%</div>
+          <p>of manual washing operations fail FDA temperature standards</p>
+        </div>
+
+        <div class="ops-card ops-img">
+          <div class="ops-img-wrap">
+            <img src="images/cs_ro_manual_wash.jpg" alt="Manual washing" onerror="this.parentElement.classList.add('no-img')" />
+            <div class="ops-tint"></div>
+          </div>
+          <div class="ops-text">
+            <div class="ops-label mono">THE WASH CYCLE</div>
+            <p>Cold water. No sanitizer. No temperature monitoring. This is how millions of steel cups are "cleaned" daily.</p>
+          </div>
+        </div>
+
+        <div class="ops-gallery-card">
+          <div class="ops-gallery">
+            <img src="images/cs_fresh_used_glass.jpg" alt="" onerror="this.classList.add('img-fail')" />
+            <img src="images/cs_blue_dispenser.jpg" alt="" onerror="this.classList.add('img-fail')" />
+            <img src="images/cs_bluestar_cooler.jpg" alt="" onerror="this.classList.add('img-fail')" />
+          </div>
+          <div class="ops-gallery-text">
+            <div class="ops-label mono">THE DAILY SCENE</div>
+            <p>Across India's restaurants and food courts, the same unsolved system, repeated everywhere.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       THE SCALE
+  ================================================ -->
+  <section class="scale-section" id="scale">
+    <div class="scale-bg">
+      <img src="images/cs_paper_cups_bin.jpg" alt="" aria-hidden="true" onerror="this.parentElement.classList.add('no-img')" />
+      <div class="scale-overlay"></div>
+    </div>
+    <div class="container scale-content">
+      <div class="scale-header" data-reveal>
+        <div class="eyebrow light-eye">THE SCALE</div>
+        <h2>This is not a niche problem.<br/><em>The numbers say so.</em></h2>
+        <p>India's quick service restaurant industry serves over 7.5 billion meals a year. Water is offered at nearly all of them. And yet the infrastructure around that single act — handing someone a clean glass — has barely changed in decades.</p>
+      </div>
+
+      <div class="stats-row" data-reveal>
+        <div class="stat-block">
+          <div class="stat-n">7.5<span>B+</span></div>
+          <div class="stat-d">QSR meals served in India every year</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-block">
+          <div class="stat-n">3.5<span>M</span></div>
+          <div class="stat-d">tonnes of plastic waste generated annually</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-block">
+          <div class="stat-n">&lt;30<span>%</span></div>
+          <div class="stat-d">of plastic packaging effectively recycled in India</div>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-block">
+          <div class="stat-n">80<span>%</span></div>
+          <div class="stat-d">of all illnesses in India linked to waterborne disease (WHO)</div>
+        </div>
+      </div>
+
+      <div class="scale-callout" data-reveal>
+        <p>Contaminated surfaces and shared utensils in food service are a well-documented transmission vector. The problem is not invisible. It has just been accepted as normal.</p>
+        <p class="callout-close">We do not want to accept that.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       DOUBT
+  ================================================ -->
+  <section class="doubt-section" id="doubt">
+    <div class="doubt-bg">
+      <img src="images/cs_fresh_used_glass.jpg" alt="" aria-hidden="true" onerror="this.parentElement.classList.add('no-img')" />
+      <div class="doubt-overlay"></div>
+    </div>
+    <div class="container doubt-content">
+      <div class="eyebrow light-eye" data-reveal>THE DOUBTFUL DECISION</div>
+      <h2 class="doubt-headline" data-reveal>Is it fresh?<br/>Is it sterilized?</h2>
+      <p class="doubt-sub" data-reveal><em>You shouldn't have to ask.</em></p>
+      <div class="doubt-cards" data-reveal>
+        <div class="dc">
+          <div class="dc-q">"Is this cup washed properly?"</div>
+          <div class="dc-a">You'll never know.</div>
+        </div>
+        <div class="dc">
+          <div class="dc-q">"Is the water inside actually filtered?"</div>
+          <div class="dc-a">No guarantee.</div>
+        </div>
+        <div class="dc">
+          <div class="dc-q">"Has someone else's fingerprint touched the rim?"</div>
+          <div class="dc-a">Almost certainly.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       PIVOT — used once, at the turning point
+  ================================================ -->
+  <section class="pivot-section" id="pivot">
+    <div class="container pivot-inner">
+      <div class="pivot-text" data-reveal>
+        <span class="pt-1">The water got purer.</span>
+        <span class="pt-2">The vessel stayed <span class="red-text">broken.</span></span>
+      </div>
+      <div class="pivot-timeline" data-reveal>
+        <div class="tl-node">
+          <div class="tl-year mono">1908</div>
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+          <div class="tl-evt">First sanitation crisis identified. The communal cup banned. The disposable era begins.</div>
+        </div>
+        <div class="tl-connector"></div>
+        <div class="tl-node">
+          <div class="tl-year mono">1960s</div>
+          <div class="tl-dot-wrap"><div class="tl-dot"></div></div>
+          <div class="tl-evt">Paper cups scale globally. The landfill crisis begins silently. Convenience wins. The planet loses.</div>
+        </div>
+        <div class="tl-connector"></div>
+        <div class="tl-node tl-now">
+          <div class="tl-year mono">Today</div>
+          <div class="tl-dot-wrap"><div class="tl-dot tl-dot-now"></div></div>
+          <div class="tl-evt">50 billion cups discarded every year. Reusable cups doubted. No answer in sight. <strong>Until now.</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       TEASER
+  ================================================ -->
+  <section class="teaser-section" id="teaser">
+    <div class="teaser-glow"></div>
+    <div class="container teaser-content">
+      <div class="eyebrow teaser-eye" data-reveal>WHAT COMES NEXT</div>
+      <h2 class="teaser-headline" data-reveal>
+        Something better<br/><em>is coming.</em>
+      </h2>
+      <p class="teaser-body" data-reveal>At REENVO, we are designing how the next evolution of water dispensers will look. Clean. Sustainable. Built for the way India actually eats. We're almost ready to show you what that looks like.</p>
+      <div class="teaser-pills" data-reveal>
+        <span class="t-pill">Clean</span>
+        <span class="t-sep">·</span>
+        <span class="t-pill">Sustainable</span>
+        <span class="t-sep">·</span>
+        <span class="t-pill">Designed for India</span>
+      </div>
+      <div class="teaser-rule" data-reveal></div>
+      <div class="teaser-brand" data-reveal>
+        <div class="tb-logo">REENVO</div>
+        <div class="tb-sub mono">The Hydro-Hygiene Paradox</div>
+      </div>
+    </div>
+    <div class="t-orb t-orb-1"></div>
+    <div class="t-orb t-orb-2"></div>
+  </section>
+
+  <!-- ================================================
+       NOTIFY
+  ================================================ -->
+  <section class="notify-section" id="notify">
+    <div class="container notify-inner">
+      <div class="notify-left" data-reveal>
+        <div class="eyebrow">BE THE FIRST TO KNOW</div>
+        <h2>When we launch,<br/><em>you'll know first.</em></h2>
+        <p>No spam. No newsletters. Just the moment it's ready.</p>
+        <ul class="notify-promise">
+          <li><span class="np-check">✓</span>First access to our solution</li>
+          <li><span class="np-check">✓</span>One message. When it matters.</li>
+          <li><span class="np-check">✓</span>Unsubscribe any time.</li>
+        </ul>
+      </div>
+      <div class="notify-right" data-reveal>
+        <form class="nf" id="notifyForm" onsubmit="handleNotify(event)">
+          <div class="field-row">
+            <div class="field-group">
+              <label for="n-name">Name</label>
+              <input type="text" id="n-name" placeholder="What do we call you?" autocomplete="name" />
+            </div>
+            <div class="field-group">
+              <label for="n-email">Email <span class="req">*</span></label>
+              <input type="email" id="n-email" placeholder="you@email.com" autocomplete="email" required />
+            </div>
+          </div>
+          <button type="submit" class="btn-primary" id="notifyBtn">
+            <span>Notify me when you launch</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+        <p class="form-alt">Or write to us at <a href="mailto:hello@reenvo.in">hello@reenvo.in</a> — we'd love to hear your part of the story.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       COMMUNITY — Comments
+  ================================================ -->
+  <section class="community-section" id="community">
+    <div class="container">
+      <div class="community-header" data-reveal>
+        <div class="eyebrow">COMMUNITY VOICES</div>
+        <h2>You've felt this too.<br/><em>Tell us your story.</em></h2>
+        <p class="community-sub">Share your own experience with water, hygiene, and the doubt that comes with every glass. Real stories from real people are how we prove this matters.</p>
+      </div>
+
+      <!-- Feed -->
+      <div class="comments-feed" id="commentsFeed" data-reveal>
+        <div class="comment-card">
+          <div class="comment-top">
+            <div class="comment-avatar" style="--av-bg:#1e3a5f">R</div>
+            <div class="comment-who">
+              <span class="comment-name">Riya S.</span>
+              <span class="comment-loc mono">Mumbai</span>
+            </div>
+          </div>
+          <p>"I work near a food court and I've watched the same steel glasses go back and forth all day. I started carrying my own bottle six months ago. It's exhausting that this is the solution we've landed on."</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top">
+            <div class="comment-avatar" style="--av-bg:#1e4a2e">A</div>
+            <div class="comment-who">
+              <span class="comment-name">Arjun M.</span>
+              <span class="comment-loc mono">Bengaluru</span>
+            </div>
+          </div>
+          <p>"The paper cups feel safe but every time I throw one away I feel guilty. You're describing exactly the thing I feel every single day at lunch."</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top">
+            <div class="comment-avatar" style="--av-bg:#4a1f1f">P</div>
+            <div class="comment-who">
+              <span class="comment-name">Priya K.</span>
+              <span class="comment-loc mono">Delhi</span>
+            </div>
+          </div>
+          <p>"My kids refuse the steel glasses at their school canteen. I don't blame them. We've just normalised distrust. That's the real problem."</p>
+        </div>
+        <div class="comment-card">
+          <div class="comment-top">
+            <div class="comment-avatar" style="--av-bg:#3a2a4a">V</div>
+            <div class="comment-who">
+              <span class="comment-name">Vikram N.</span>
+              <span class="comment-loc mono">Chennai</span>
+            </div>
+          </div>
+          <p>"I manage three QSR outlets and the cup problem is real. We spend about 40 minutes a day just on cup washing and it's never consistent. I would pay for a real solution immediately."</p>
+        </div>
+      </div>
+
+      <!-- Add comment -->
+      <div class="add-comment" data-reveal>
+        <h3 class="add-comment-title">Add your voice</h3>
+        <form class="comment-form" id="commentForm" onsubmit="handleComment(event)">
+          <div class="field-row">
+            <div class="field-group">
+              <label for="c-name">Your name <span class="req">*</span></label>
+              <input type="text" id="c-name" placeholder="First name is fine" required />
+            </div>
+            <div class="field-group">
+              <label for="c-city">City</label>
+              <input type="text" id="c-city" placeholder="Where are you writing from?" />
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="c-msg">Your story <span class="req">*</span></label>
+            <textarea id="c-msg" rows="4" placeholder="Tell us about your experience with water and the doubt that comes with it..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="cfBtn">
+            <span>Share your story</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       CONTACT — Ask us anything
+  ================================================ -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-left" data-reveal>
+        <div class="eyebrow">ASK US ANYTHING</div>
+        <h2>Curious about<br/><em>what we're building?</em></h2>
+        <p>Whether you run a restaurant, care about sustainability, or just want to understand what we're doing — we want to hear from you. Ask your question and we'll get back to you personally.</p>
+        <a href="mailto:hello@reenvo.in" class="contact-email-link">
+          <span class="mono">hello@reenvo.in</span>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="contact-right" data-reveal>
+        <form class="contact-form" id="contactForm" onsubmit="handleContact(event)">
+          <div class="field-row">
+            <div class="field-group">
+              <label for="ct-name">Name <span class="req">*</span></label>
+              <input type="text" id="ct-name" placeholder="Your name" autocomplete="name" required />
+            </div>
+            <div class="field-group">
+              <label for="ct-email">Email <span class="req">*</span></label>
+              <input type="email" id="ct-email" placeholder="you@email.com" autocomplete="email" required />
+            </div>
+          </div>
+          <div class="field-group">
+            <label for="ct-org">Organisation <span class="optional mono">(optional)</span></label>
+            <input type="text" id="ct-org" placeholder="Restaurant, hospital, office..." />
+          </div>
+          <div class="field-group">
+            <label for="ct-msg">Your question <span class="req">*</span></label>
+            <textarea id="ct-msg" rows="5" placeholder="What would you like to know about what we're building?" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary btn-outline" id="contactBtn">
+            <span>Send your question</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="footer-brand">REENVO</span>
+        <span class="footer-copy mono">© 2025. All rights reserved.</span>
+      </div>
+      <div class="footer-right">
+        <span class="footer-note">A problem worth solving.</span>
+        <a href="mailto:hello@reenvo.in" class="footer-email mono">hello@reenvo.in</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
